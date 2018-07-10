@@ -9,13 +9,12 @@
 注意
 -------
         需要修改client1中`better-scroll`源码bscroll.esm.js大概1416行添加一个自定义事件_scroll。
-
-        ```
-        BScroll.prototype._translate = function (x, y, scale) {
-            this.trigger('_scroll', {
-                x: x,
-                y: y
-            });
-            <!-- 省略 -->
-        }
-        ```
+ ```
+    BScroll.prototype._translate = function (x, y, scale) {
+        this.trigger('_scroll', {
+            x: x,
+            y: y
+        });
+        <!-- 省略 -->
+    }
+```
